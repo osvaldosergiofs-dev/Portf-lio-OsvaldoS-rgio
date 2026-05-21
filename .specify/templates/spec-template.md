@@ -95,6 +95,28 @@
 - **FR-006**: System MUST authenticate users via [NEEDS CLARIFICATION: auth method not specified - email/password, SSO, OAuth?]
 - **FR-007**: System MUST retain user data for [NEEDS CLARIFICATION: retention period not specified]
 
+### Non-Functional Requirements *(mandatory)*
+
+- **NFR-001 (Visual Fidelity)**: Implementation MUST match the approved design reference for
+  color, typography, spacing, hierarchy, and composition.
+- **NFR-002 (Performance)**: Implementation MUST define and meet explicit Core Web Vitals
+  targets (LCP, CLS, INP) and optimize media/JS payloads accordingly.
+- **NFR-003 (SEO)**: Implementation MUST include complete technical SEO metadata, semantic
+  heading structure, Open Graph tags, and descriptive alt text.
+- **NFR-004 (Accessibility)**: Implementation MUST provide visible focus states, keyboard
+  navigation support, semantic HTML structure, and compliant contrast.
+- **NFR-005 (Responsiveness)**: Implementation MUST support mobile, tablet, and desktop layouts
+  with no horizontal overflow.
+- **NFR-006 (Maintainability)**: Implementation MUST be componentized with clear responsibility
+  boundaries and reusable patterns.
+- **NFR-007 (Stack Constraint)**: Frontend implementation MUST use Vue 3 + Vite.
+- **NFR-008 (Source-of-Truth Gate)**: Implementation MUST use MCP Open Design project
+  `Portifólio__PRO` as single source of truth and MUST read `index.html`,
+  `DESIGN-HANDOFF.md`, and `DESIGN-MANIFEST.json` before coding starts.
+- **NFR-009 (No Reinterpretation Rule)**: Section order, spacing, typography, colors, and
+  hierarchy MUST remain identical to source design unless the design artifacts explicitly
+  evidence a change.
+
 ### Key Entities *(include if feature involves data)*
 
 - **[Entity 1]**: [What it represents, key attributes without implementation]

@@ -31,7 +31,15 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- [ ] Open Design fidelity strategy documented (source frames, token extraction, spacing/type mapping).
+- [ ] MCP source-of-truth gate passed: `Portifólio__PRO` read via MCP with `index.html`, `DESIGN-HANDOFF.md`, and `DESIGN-MANIFEST.json` reviewed before coding.
+- [ ] Vue 3 + Vite stack confirmed; no alternative framework introduced.
+- [ ] Section order and visual hierarchy lock documented; no reinterpretation allowed without source evidence.
+- [ ] Core Web Vitals budgets defined (LCP, CLS, INP) with measurement method.
+- [ ] SEO plan defined (title/description, Open Graph, semantic heading structure, alt text coverage).
+- [ ] Accessibility plan defined (visible focus, keyboard navigation, semantic landmarks, contrast checks).
+- [ ] Responsive plan defined for mobile/tablet/desktop with explicit no-horizontal-overflow validation.
+- [ ] Component architecture and maintainability rules documented (responsibility boundaries and reuse strategy).
 
 ## Project Structure
 

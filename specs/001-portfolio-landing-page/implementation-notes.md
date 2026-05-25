@@ -8,17 +8,17 @@
   3. `DESIGN-MANIFEST.json`
 
 ## Seções Open Design -> Componentes Vue
-- Header / Navegação -> `resources/js/components/layout/TopBar.vue`
-- Hero -> `resources/js/components/sections/HeroSection.vue`
-- Sobre -> `resources/js/components/sections/AboutSection.vue`
-- Habilidades -> `resources/js/components/sections/SkillsSection.vue`
-- Projetos (grid) -> `resources/js/components/sections/ProjectsSection.vue`
-- Modal de projeto -> `resources/js/components/overlays/ProjectModal.vue`
-- Modal "mais projetos" -> `resources/js/components/overlays/MoreProjectsModal.vue`
-- Modal de detalhe extra -> `resources/js/components/overlays/ExtraProjectDetailModal.vue`
-- Serviços -> `resources/js/components/sections/ServicesSection.vue`
-- Contato -> `resources/js/components/sections/ContactSection.vue`
-- Footer -> `resources/js/components/layout/FooterBar.vue`
+- Header / Navegação -> `src/components/layout/TopBar.vue`
+- Hero -> `src/components/sections/HeroSection.vue`
+- Sobre -> `src/components/sections/AboutSection.vue`
+- Habilidades -> `src/components/sections/SkillsSection.vue`
+- Projetos (grid) -> `src/components/sections/ProjectsSection.vue`
+- Modal de projeto -> `src/components/overlays/ProjectModal.vue`
+- Modal "mais projetos" -> `src/components/overlays/MoreProjectsModal.vue`
+- Modal de detalhe extra -> `src/components/overlays/ExtraProjectDetailModal.vue`
+- Serviços -> `src/components/sections/ServicesSection.vue`
+- Contato -> `src/components/sections/ContactSection.vue`
+- Footer -> `src/components/layout/FooterBar.vue`
 
 ## Tokens principais extraídos
 - Paleta base: `#020605`, `#252525`, `#e0e0e0`, `#b6b6b6`, `#ffffff`, `#a6a6a6`

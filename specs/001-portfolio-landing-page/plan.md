@@ -12,8 +12,8 @@ e com validacao final por checklist de fidelidade secao por secao.
 
 ## Technical Context
 
-**Language/Version**: JavaScript (ES2023), Vue 3.5.x (SFC), Vite 8.x  
-**Primary Dependencies**: `vue`, `@vitejs/plugin-vue`, `vite`, `laravel-vite-plugin`  
+**Language/Version**: JavaScript (ES2023), Vue 3.5.x (SFC), Vite 3.x  
+**Primary Dependencies**: `vue`, `@vitejs/plugin-vue`, `vite`  
 **Storage**: N/A (conteudo estatico + assets em `public/portfolio-assets/`)  
 **Testing**: QA visual comparativa, auditoria Lighthouse, validacao teclado/foco e checklist de fidelidade  
 **Target Platform**: Navegadores modernos desktop/mobile  
@@ -74,15 +74,15 @@ tokens e assets.
 **Status**: READY
 
 Mapeamento secao -> componente:
-- Header/Nav -> `resources/js/components/layout/TopBar.vue`
-- Hero -> `resources/js/components/sections/HeroSection.vue`
-- Sobre -> `resources/js/components/sections/AboutSection.vue`
-- Habilidades -> `resources/js/components/sections/SkillsSection.vue`
-- Projetos -> `resources/js/components/sections/ProjectsSection.vue`
-- Servicos -> `resources/js/components/sections/ServicesSection.vue`
-- Contato -> `resources/js/components/sections/ContactSection.vue`
-- Footer -> `resources/js/components/layout/FooterBar.vue`
-- Overlays de projeto -> `resources/js/components/overlays/*.vue`
+- Header/Nav -> `src/components/layout/TopBar.vue`
+- Hero -> `src/components/sections/HeroSection.vue`
+- Sobre -> `src/components/sections/AboutSection.vue`
+- Habilidades -> `src/components/sections/SkillsSection.vue`
+- Projetos -> `src/components/sections/ProjectsSection.vue`
+- Servicos -> `src/components/sections/ServicesSection.vue`
+- Contato -> `src/components/sections/ContactSection.vue`
+- Footer -> `src/components/layout/FooterBar.vue`
+- Overlays de projeto -> `src/components/overlays/*.vue`
 
 ### Gate 4 - Implementacao Fiel
 
@@ -139,17 +139,17 @@ specs/001-portfolio-landing-page/
 ### Source Code (repository root)
 
 ```text
-resources/
-|-- js/
-|   |-- app.js
-|   |-- App.vue
-|   |-- components/
-|   |   |-- layout/
-|   |   |-- sections/
-|   |   `-- overlays/
-|   |-- composables/
-|   `-- data/
-`-- css/
+src/
+|-- main.js
+|-- App.vue
+|-- open-design-export.js
+|-- components/
+|   |-- layout/
+|   |-- sections/
+|   `-- overlays/
+|-- composables/
+|-- data/
+`-- styles/
     |-- app.css
     |-- tokens.css
     |-- layout.css

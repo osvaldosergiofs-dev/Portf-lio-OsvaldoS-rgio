@@ -11,21 +11,21 @@ Leitura realizada via MCP Open Design no projeto **`Portifólio__PRO`**:
 - Ajuste de conteúdo textual para refletir copy do exportado.
 - Ajuste de topbar, serviços e contato para aproximar estrutura/ícones/semântica do `index.html`.
 - Ajuste de modais para incluir listas, bloco de tecnologias e `mvp` quando presente.
-- SEO técnico preservado em `resources/views/welcome.blade.php`.
+- SEO técnico migrado para `index.html`.
 - Build de produção validado (`npm run build`).
 
 ## Mapeamento seção Open Design -> componente Vue
-- Header / Navigation -> `resources/js/components/layout/TopBar.vue`
-- Hero -> `resources/js/components/sections/HeroSection.vue`
-- Sobre -> `resources/js/components/sections/AboutSection.vue`
-- Habilidades -> `resources/js/components/sections/SkillsSection.vue`
-- Projetos (cards) -> `resources/js/components/sections/ProjectsSection.vue`
-- Modal de projeto -> `resources/js/components/overlays/ProjectModal.vue`
-- Modal "Mais projetos" -> `resources/js/components/overlays/MoreProjectsModal.vue`
-- Modal de detalhe extra -> `resources/js/components/overlays/ExtraProjectDetailModal.vue`
-- Serviços -> `resources/js/components/sections/ServicesSection.vue`
-- Contato -> `resources/js/components/sections/ContactSection.vue`
-- Footer -> `resources/js/components/layout/FooterBar.vue`
+- Header / Navigation -> `src/components/layout/TopBar.vue`
+- Hero -> `src/components/sections/HeroSection.vue`
+- Sobre -> `src/components/sections/AboutSection.vue`
+- Habilidades -> `src/components/sections/SkillsSection.vue`
+- Projetos (cards) -> `src/components/sections/ProjectsSection.vue`
+- Modal de projeto -> `src/components/overlays/ProjectModal.vue`
+- Modal "Mais projetos" -> `src/components/overlays/MoreProjectsModal.vue`
+- Modal de detalhe extra -> `src/components/overlays/ExtraProjectDetailModal.vue`
+- Serviços -> `src/components/sections/ServicesSection.vue`
+- Contato -> `src/components/sections/ContactSection.vue`
+- Footer -> `src/components/layout/FooterBar.vue`
 
 ## Checklist de fidelidade visual (item a item)
 

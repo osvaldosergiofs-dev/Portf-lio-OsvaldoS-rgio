@@ -14,8 +14,8 @@ Arquivos revalidados via MCP:
 - [x] Assets oficiais copiados para `public/portfolio-assets`
 - [x] Referências `/portfolio-assets/...` validadas sem arquivos ausentes
 - [x] `index.html` oficial preservado em `public/portfolio-assets/index.html`
-- [x] CSS oficial portado para `resources/css/app.css`
-- [x] Markup oficial portado para Vue em `resources/js/open-design-export.js`
+- [x] CSS oficial portado para `src/styles/app.css`
+- [x] Markup oficial portado para Vue em `src/open-design-export.js`
 - [x] Runtime/interações oficiais encapsulados em Vue
 - [x] SEO base alinhado ao export
 - [x] Open Graph aponta para asset oficial

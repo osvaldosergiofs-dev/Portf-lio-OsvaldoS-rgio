@@ -1,0 +1,35 @@
+.about-layout {
+  display: grid;
+  gap: 24px;
+}
+
+.about-copy > p {
+  margin: 0;
+  color: var(--body);
+  max-width: 72ch;
+  font-size: clamp(16px, 1.8vw, 19px);
+}
+
+.about-points {
+  margin-top: 24px;
+  display: grid;
+  gap: 14px;
+}
+
+.point {
+  border: 1px solid var(--line);
+  background: var(--panel-gradient);
+  padding: 14px;
+  display: grid;
+  gap: 7px;
+}
+
+.point strong {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.point span {
+  color: var(--body);
+}

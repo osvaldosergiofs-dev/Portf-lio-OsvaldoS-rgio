@@ -33,10 +33,10 @@ description: "Task list for implementing the portfolio landing page with strict 
 
 **Purpose**: Definir mapa estrutural e base de fidelidade antes de ajustes visuais finais
 
-- [X] T005 Mapear secoes oficiais para componentes Vue em `specs/001-portfolio-landing-page/implementation-notes.md` e `resources/js/App.vue`
-- [X] T006 [P] Validar estrutura semantica base (landmarks/headings) em `resources/js/components/sections/*.vue`
-- [X] T007 [P] Validar escala de tokens (cores, tipografia, espacamentos, proporcoes) em `resources/css/tokens.css` e `resources/css/sections/*.css`
-- [ ] T008 Validar integracao de assets oficiais sem substituicoes arbitrarias em `resources/js/data/portfolio-content.js` e `public/portfolio-assets/`
+- [X] T005 Mapear secoes oficiais para componentes Vue em `specs/001-portfolio-landing-page/implementation-notes.md` e `src/App.vue`
+- [X] T006 [P] Validar estrutura semantica base (landmarks/headings) em `src/components/sections/*.vue`
+- [X] T007 [P] Validar escala de tokens (cores, tipografia, espacamentos, proporcoes) em `src/styles/tokens.css` e `src/styles/sections/*.css`
+- [ ] T008 Validar integracao de assets oficiais sem substituicoes arbitrarias em `src/data/portfolio-content.js` e `public/portfolio-assets/`
 
 **Checkpoint**: Fonte de verdade confirmada e arquitetura alinhada ao design original.
 
@@ -50,10 +50,10 @@ description: "Task list for implementing the portfolio landing page with strict 
 
 ### Implementation for User Story 1
 
-- [X] T009 [P] [US1] Implementar/ajustar HTML semantico da navegacao e header em `resources/js/components/layout/TopBar.vue`
-- [X] T010 [P] [US1] Implementar/ajustar HTML semantico das secoes hero/sobre/habilidades em `resources/js/components/sections/HeroSection.vue`, `resources/js/components/sections/AboutSection.vue`, `resources/js/components/sections/SkillsSection.vue`
-- [X] T011 [P] [US1] Implementar/ajustar HTML semantico das secoes projetos/servicos/contato em `resources/js/components/sections/ProjectsSection.vue`, `resources/js/components/sections/ServicesSection.vue`, `resources/js/components/sections/ContactSection.vue`
-- [X] T012 [US1] Garantir composicao e ordem original das secoes no container principal em `resources/js/App.vue`
+- [X] T009 [P] [US1] Implementar/ajustar HTML semantico da navegacao e header em `src/components/layout/TopBar.vue`
+- [X] T010 [P] [US1] Implementar/ajustar HTML semantico das secoes hero/sobre/habilidades em `src/components/sections/HeroSection.vue`, `src/components/sections/AboutSection.vue`, `src/components/sections/SkillsSection.vue`
+- [X] T011 [P] [US1] Implementar/ajustar HTML semantico das secoes projetos/servicos/contato em `src/components/sections/ProjectsSection.vue`, `src/components/sections/ServicesSection.vue`, `src/components/sections/ContactSection.vue`
+- [X] T012 [US1] Garantir composicao e ordem original das secoes no container principal em `src/App.vue`
 
 **Checkpoint**: Estrutura de conteudo principal equivalente ao design.
 
@@ -67,9 +67,9 @@ description: "Task list for implementing the portfolio landing page with strict 
 
 ### Implementation for User Story 2
 
-- [X] T013 [P] [US2] Validar estrutura visual dos cards e estados de interacao em `resources/js/components/sections/ProjectsSection.vue` e `resources/css/sections/projects.css`
-- [X] T014 [P] [US2] Validar estrutura/ordem dos modais de projetos em `resources/js/components/overlays/ProjectModal.vue`, `resources/js/components/overlays/MoreProjectsModal.vue`, `resources/js/components/overlays/ExtraProjectDetailModal.vue`
-- [ ] T015 [US2] Integrar videos/imagens oficiais e fallback sem alterar composicao em `resources/js/data/portfolio-content.js` e `public/portfolio-assets/`
+- [X] T013 [P] [US2] Validar estrutura visual dos cards e estados de interacao em `src/components/sections/ProjectsSection.vue` e `src/styles/sections/projects.css`
+- [X] T014 [P] [US2] Validar estrutura/ordem dos modais de projetos em `src/components/overlays/ProjectModal.vue`, `src/components/overlays/MoreProjectsModal.vue`, `src/components/overlays/ExtraProjectDetailModal.vue`
+- [ ] T015 [US2] Integrar videos/imagens oficiais e fallback sem alterar composicao em `src/data/portfolio-content.js` e `public/portfolio-assets/`
 
 **Checkpoint**: Bloco de projetos equivalente em conteudo, estrutura e estados visuais.
 
@@ -83,9 +83,9 @@ description: "Task list for implementing the portfolio landing page with strict 
 
 ### Implementation for User Story 3
 
-- [X] T016 [P] [US3] Validar responsividade sem quebrar composicao original em `resources/css/layout.css` e `resources/css/sections/*.css`
-- [X] T017 [P] [US3] Aplicar/validar SEO tecnico (title, description, Open Graph, canonical) em `resources/views/welcome.blade.php`
-- [X] T018 [US3] Aplicar/validar acessibilidade (teclado, foco, aria, alt) sem alterar visual em `resources/js/components/**/*.vue` e `resources/css/app.css`
+- [X] T016 [P] [US3] Validar responsividade sem quebrar composicao original em `src/styles/layout.css` e `src/styles/sections/*.css`
+- [X] T017 [P] [US3] Aplicar/validar SEO tecnico (title, description, Open Graph, canonical) em `index.html`
+- [X] T018 [US3] Aplicar/validar acessibilidade (teclado, foco, aria, alt) sem alterar visual em `src/components/**/*.vue` e `src/styles/app.css`
 
 **Checkpoint**: Requisitos de responsividade, SEO e acessibilidade atendidos com fidelidade visual preservada.
 

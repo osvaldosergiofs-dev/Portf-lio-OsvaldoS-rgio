@@ -46,6 +46,6 @@
 - Alternatives considered: Validar só em 3 breakpoints genéricos (rejeitado por cobertura insuficiente).
 
 ## Decision 10: Estrutura de integração no repositório atual
-- Decision: Implementar frontend Vue 3 + Vite dentro da estrutura existente (`resources/js` + `resources/css`), sem criar app paralelo.
+- Decision: Implementar frontend Vue 3 + Vite dentro da estrutura Vite pura (`src` + `public`), sem app paralelo Laravel.
 - Rationale: Reduz overhead operacional e aproveita pipeline já configurado no projeto.
 - Alternatives considered: Criar diretório `frontend/` separado (rejeitado por complexidade extra nesta entrega).

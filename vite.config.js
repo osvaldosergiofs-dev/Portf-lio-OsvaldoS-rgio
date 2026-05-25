@@ -1,13 +1,9 @@
 import { defineConfig } from 'vite'
-import laravel from 'laravel-vite-plugin'
 import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
-    plugins: [
-        laravel({
-            input: ['resources/css/app.css', 'resources/js/app.js'],
-            refresh: true,
-        }),
-        vue(),
-    ],
+    // GitHub Pages project sites are served from /<repository-name>/.
+    // If the repository is renamed, update this value to match it.
+    base: '/Portf-lio-OsvaldoS-rgio/',
+    plugins: [vue()],
 })

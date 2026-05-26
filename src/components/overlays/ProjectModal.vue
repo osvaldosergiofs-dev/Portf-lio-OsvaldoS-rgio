@@ -1,5 +1,5 @@
 ﻿<script setup>
-import { computed, ref, watch } from 'vue'
+import { computed, nextTick, ref, watch } from 'vue'
 
 const props = defineProps({
   project: {
@@ -12,12 +12,29 @@ const emit = defineEmits(['close'])
 
 const modalRef = ref(null)
 
+const resetModalScroll = () => {
+  const modal = modalRef.value
+  if (!modal) return
+
+  ;[modal, ...modal.querySelectorAll('.project-modal__copy, .project-modal__simple')].forEach(
+    (element) => {
+      element.scrollTop = 0
+      element.scrollLeft = 0
+    },
+  )
+}
+
 watch(
   () => props.project,
-  (project) => {
+  async (project) => {
     if (project) {
       document.body.classList.add('modal-open')
-      requestAnimationFrame(() => modalRef.value?.focus())
+      await nextTick()
+      resetModalScroll()
+      requestAnimationFrame(() => {
+        resetModalScroll()
+        modalRef.value?.focus()
+      })
     } else {
       document.body.classList.remove('modal-open')
     }

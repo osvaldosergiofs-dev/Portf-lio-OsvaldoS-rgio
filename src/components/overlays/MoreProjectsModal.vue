@@ -1,5 +1,5 @@
 ﻿<script setup>
-import { ref, watch } from 'vue'
+import { nextTick, ref, watch } from 'vue'
 
 const props = defineProps({
   isOpen: {
@@ -15,10 +15,27 @@ const props = defineProps({
 const emit = defineEmits(['close', 'open-extra'])
 const modalRef = ref(null)
 
+const resetModalScroll = () => {
+  const modal = modalRef.value
+  if (!modal) return
+
+  ;[modal, ...modal.querySelectorAll('.project-modal__simple')].forEach((element) => {
+    element.scrollTop = 0
+    element.scrollLeft = 0
+  })
+}
+
 watch(
   () => props.isOpen,
-  (isOpen) => {
-    if (isOpen) requestAnimationFrame(() => modalRef.value?.focus())
+  async (isOpen) => {
+    if (!isOpen) return
+
+    await nextTick()
+    resetModalScroll()
+    requestAnimationFrame(() => {
+      resetModalScroll()
+      modalRef.value?.focus()
+    })
   },
 )
 </script>

@@ -1,5 +1,5 @@
 ﻿<script setup>
-import { computed, ref, watch } from 'vue'
+import { computed, nextTick, ref, watch } from 'vue'
 
 const props = defineProps({
   project: {
@@ -11,10 +11,27 @@ const props = defineProps({
 const emit = defineEmits(['close'])
 const modalRef = ref(null)
 
+const resetModalScroll = () => {
+  const modal = modalRef.value
+  if (!modal) return
+
+  ;[modal, ...modal.querySelectorAll('.project-modal__simple')].forEach((element) => {
+    element.scrollTop = 0
+    element.scrollLeft = 0
+  })
+}
+
 watch(
   () => props.project,
-  (project) => {
-    if (project) requestAnimationFrame(() => modalRef.value?.focus())
+  async (project) => {
+    if (!project) return
+
+    await nextTick()
+    resetModalScroll()
+    requestAnimationFrame(() => {
+      resetModalScroll()
+      modalRef.value?.focus()
+    })
   },
 )
 

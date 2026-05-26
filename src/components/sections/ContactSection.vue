@@ -15,7 +15,7 @@ const emit = defineEmits(['copy'])
       <div class="contact-panel">
         <div>
           <div class="section-kicker">Contato</div>
-          <h2 id="contato-title">Vamos construir algo nítido.</h2>
+          <h2 id="contato-title">INTERFACES MODERNAS. SOLUÇÕES REAIS.</h2>
           <p>
             Desenvolvedor Front-End / Full Stack com foco em interfaces modernas, sistemas web e experiência do usuário.
             Busco oportunidades para atuar no desenvolvimento de produtos digitais utilizando Vue.js, Laravel e tecnologias modernas.

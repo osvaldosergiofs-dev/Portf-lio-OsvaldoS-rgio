@@ -422,12 +422,12 @@ export const services = [
 
 export const contactChannels = [
   {
-    id: 'email',
-    type: 'copy',
-    label: 'Gmail',
-    value: 'contato@osvaldosergio.dev',
-    display: 'osvaldosergio.fs@gmail.com',
-    action: 'copiar',
+    id: 'whatsapp',
+    type: 'link',
+    label: 'WhatsApp',
+    value: 'https://wa.me/5581993760308',
+    display: '(81) 99376-0308',
+    action: 'chamar',
   },
   {
     id: 'linkedin',
@@ -446,12 +446,12 @@ export const contactChannels = [
     action: 'perfil',
   },
   {
-    id: 'whatsapp',
-    type: 'link',
-    label: 'WhatsApp',
-    value: 'https://wa.me/5581993760308',
-    display: '(81) 99376-0308',
-    action: 'chamar',
+    id: 'email',
+    type: 'copy',
+    label: 'Gmail',
+    value: 'contato@osvaldosergio.dev',
+    display: 'osvaldosergio.fs@gmail.com',
+    action: 'copiar',
   },
   {
     id: 'resume',

@@ -17,7 +17,7 @@
 - [ ] mpct34x6-Video-Project-GHS.mp4
 
 ## Documents
-- [ ] mpc3h1j2-OSVALDO-SÉRGIO_____.pdf
+- [ ] OSVALDO-SERGIO-CURRICULO.pdf
 
 ## Target paths
 - Images: `public/portfolio-assets/images/` (manter subpasta `assets/` quando aplicável)

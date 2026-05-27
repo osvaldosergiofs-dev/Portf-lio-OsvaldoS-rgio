@@ -457,7 +457,7 @@ export const contactChannels = [
     id: 'resume',
     type: 'download',
     label: 'Currículo',
-    value: asset('portfolio-assets/mpc3h1j2-OSVALDO-SÉRGIO_____.pdf'),
+    value: asset('portfolio-assets/OSVALDO-SERGIO-CURRICULO.pdf'),
     action: 'download',
   },
 ]
@@ -475,5 +475,5 @@ export const mediaManifest = {
     'mp6zvams-image.png',
   ],
   requiredVideos: ['mpcsmkxw-Video-Project-AGENDA.mp4', 'mpcszrsq-Video-Project-VOUCHERX.mp4', 'mpct34x6-Video-Project-GHS.mp4'],
-  requiredDocuments: ['mpc3h1j2-OSVALDO-SÉRGIO_____.pdf'],
+  requiredDocuments: ['OSVALDO-SERGIO-CURRICULO.pdf'],
 }

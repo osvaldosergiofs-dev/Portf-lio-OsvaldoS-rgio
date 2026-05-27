@@ -29,7 +29,7 @@
 - Imagens: `assets/header-avatar.png`, `mpcs2ess-image.png`, `mpcs2j9k-image.png`, `mpcs2m4u-image.png`, `assets/video-reference-thumbnail.png`
 - Máscaras de ícones: `assets/php-logo-mask.png`, `assets/mysql-logo-mask.png`, `assets/npm-logo-mask.png`, `mp6zvams-image.png`
 - Vídeos: `mpcsmkxw-Video-Project-AGENDA.mp4`, `mpcszrsq-Video-Project-VOUCHERX.mp4`, `mpct34x6-Video-Project-GHS.mp4`
-- Currículo: `mpc3h1j2-OSVALDO-SÉRGIO_____.pdf`
+- Currículo: `OSVALDO-SERGIO-CURRICULO.pdf`
 
 ## Observação
 - O MCP Open Design disponibilizou conteúdo textual/estrutural completo e metadados.

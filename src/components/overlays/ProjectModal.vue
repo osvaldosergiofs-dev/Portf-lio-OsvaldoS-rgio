@@ -11,6 +11,16 @@ const props = defineProps({
 const emit = defineEmits(['close'])
 
 const modalRef = ref(null)
+const videoRef = ref(null)
+
+const keepVideoMuted = () => {
+  const video = videoRef.value
+  if (!video) return
+
+  video.muted = true
+  video.defaultMuted = true
+  video.volume = 0
+}
 
 const resetModalScroll = () => {
   const modal = modalRef.value
@@ -30,8 +40,10 @@ watch(
     if (project) {
       document.body.classList.add('modal-open')
       await nextTick()
+      keepVideoMuted()
       resetModalScroll()
       requestAnimationFrame(() => {
+        keepVideoMuted()
         resetModalScroll()
         modalRef.value?.focus()
       })
@@ -72,7 +84,17 @@ const isListSection = (content) => Array.isArray(content) && content.every((item
 
       <div class="project-modal__grid">
         <div class="project-modal__media">
-          <video v-if="project.video" controls preload="metadata" playsinline :aria-label="project.videoLabel">
+          <video
+            v-if="project.video"
+            ref="videoRef"
+            controls
+            muted
+            preload="metadata"
+            playsinline
+            :aria-label="project.videoLabel"
+            @play="keepVideoMuted"
+            @volumechange="keepVideoMuted"
+          >
             <source :src="project.video" type="video/mp4" />
           </video>
           <div v-else class="project-video-placeholder">Vídeo indisponível</div>

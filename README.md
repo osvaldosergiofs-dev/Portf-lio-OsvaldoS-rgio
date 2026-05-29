@@ -21,7 +21,7 @@ npm run preview
 O projeto está configurado em `vite.config.js` com:
 
 ```js
-base: '/meu-portifolio/'
+base: '/portfolio/'
 ```
 
 Se o repositório no GitHub tiver outro nome, ajuste esse valor para `/<nome-do-repositorio>/`.

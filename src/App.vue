@@ -41,8 +41,14 @@ const moveSkillsAfterServices = (markup) => {
   return `${withoutSkills.slice(0, contactStart)}${skillsBlock}${withoutSkills.slice(contactStart)}`
 }
 
+const muteVideoMarkup = (markup) =>
+  markup.replaceAll(
+    '<video controls="" preload="metadata" playsinline="">',
+    '<video controls="" muted="" preload="metadata" playsinline="">',
+  )
+
 const applyRequestedAdjustments = (markup) =>
-  moveSkillsAfterServices(reorderNavLinks(markup))
+  muteVideoMarkup(moveSkillsAfterServices(reorderNavLinks(markup)))
 
 const pageMarkupWithoutFooter = computed(() =>
   applyRequestedAdjustments(withBaseUrl(openDesignMarkup)).replace(

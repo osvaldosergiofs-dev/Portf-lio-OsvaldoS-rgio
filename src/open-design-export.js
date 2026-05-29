@@ -387,6 +387,18 @@ export function initOpenDesignPortfolio() {
         });
     };
 
+    const keepVideoMuted = (video) => {
+      if (!video) return;
+      video.muted = true;
+      video.defaultMuted = true;
+      video.volume = 0;
+      video.setAttribute('muted', '');
+    };
+
+    keepVideoMuted(projectVideo);
+    projectVideo?.addEventListener('volumechange', () => keepVideoMuted(projectVideo));
+    projectVideo?.addEventListener('play', () => keepVideoMuted(projectVideo));
+
     const openProjectModal = (card) => {
       const details = projectDetails[card.dataset.project];
       if (!details) return;
@@ -398,7 +410,9 @@ export function initOpenDesignPortfolio() {
         projectVideoSource.src = details.video.src;
         projectVideoFrame?.setAttribute('aria-label', details.video.label);
         projectVideo.setAttribute('aria-label', details.video.label);
+        keepVideoMuted(projectVideo);
         projectVideo.load();
+        keepVideoMuted(projectVideo);
       }
       projectModalContent.innerHTML = [
         sectionMarkup('Sobre o projeto', details.about),
@@ -420,6 +434,7 @@ export function initOpenDesignPortfolio() {
       if (projectVideo) {
         projectVideo.pause();
         projectVideo.currentTime = 0;
+        keepVideoMuted(projectVideo);
       }
       projectModal.classList.remove('is-open');
       projectModal.classList.add('is-closing');

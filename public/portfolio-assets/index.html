@@ -4104,7 +4104,7 @@ Busco oportunidades para atuar no desenvolvimento de produtos digitais utilizand
       <div class="project-modal__grid">
         <div class="project-modal__media">
           <div class="project-video-placeholder" aria-label="Vídeo do projeto CliqueAgenda">
-            <video controls="" preload="metadata" playsinline="">
+            <video controls="" muted="" preload="metadata" playsinline="">
               <source src="mpcsmkxw-Video-Project-AGENDA.mp4" type="video/mp4">
             </video>
           </div>
@@ -4540,6 +4540,18 @@ Busco oportunidades para atuar no desenvolvimento de produtos digitais utilizand
       body.classList.toggle('modal-open', hasActiveModal);
     };
 
+    const keepVideoMuted = (video) => {
+      if (!video) return;
+      video.muted = true;
+      video.defaultMuted = true;
+      video.volume = 0;
+      video.setAttribute('muted', '');
+    };
+
+    keepVideoMuted(projectVideo);
+    projectVideo?.addEventListener('volumechange', () => keepVideoMuted(projectVideo));
+    projectVideo?.addEventListener('play', () => keepVideoMuted(projectVideo));
+
     const openProjectModal = (card) => {
       const details = projectDetails[card.dataset.project];
       if (!details) return;
@@ -4551,7 +4563,9 @@ Busco oportunidades para atuar no desenvolvimento de produtos digitais utilizand
         projectVideoSource.src = details.video.src;
         projectVideoFrame?.setAttribute('aria-label', details.video.label);
         projectVideo.setAttribute('aria-label', details.video.label);
+        keepVideoMuted(projectVideo);
         projectVideo.load();
+        keepVideoMuted(projectVideo);
       }
       projectModalContent.innerHTML = [
         sectionMarkup('Sobre o projeto', details.about),
@@ -4571,6 +4585,7 @@ Busco oportunidades para atuar no desenvolvimento de produtos digitais utilizand
       if (projectVideo) {
         projectVideo.pause();
         projectVideo.currentTime = 0;
+        keepVideoMuted(projectVideo);
       }
       projectModal.classList.remove('is-open');
       projectModal.classList.add('is-closing');

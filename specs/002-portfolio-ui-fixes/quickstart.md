@@ -23,7 +23,7 @@ npm run dev -- --host 127.0.0.1 --port 5173
 Open the printed local URL, typically:
 
 ```text
-http://127.0.0.1:5173/Portf-lio-OsvaldoS-rgio/
+http://127.0.0.1:5173/portfolio/
 ```
 
 If the port is busy, Vite will choose the next available port.

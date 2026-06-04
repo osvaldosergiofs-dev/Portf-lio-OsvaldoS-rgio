@@ -56,28 +56,23 @@ export const skillCategories = [
   },
   {
     name: 'Backend',
-    skills: ['PHP', 'Laravel', 'APIs REST', 'JWT', 'Bearer Token', 'Controllers', 'Migrations', 'Seeders', 'Resources'],
+    skills: ['PHP', 'Laravel', 'APIs REST', 'Node.JS'],
   },
   {
     name: 'Banco de Dados',
-    skills: ['MySQL', 'SQL', 'phpMyAdmin'],
+    skills: ['MySQL', 'SQL'],
   },
   {
     name: 'Ferramentas',
-    skills: [
-      'Git',
-      'GitHub',
-      'Git Flow',
-      'Pull Requests',
-      'VS Code',
-      'PowerShell',
-      'npm',
-      'Node.js',
-      'Deploy',
-      'Componentização',
-      'Responsividade',
-      'Versionamento',
-    ],
+    skills: ['Git', 'GitHub', 'VS Code', 'Figma', 'Codex'],
+  },
+  {
+    name: 'Deploy/Infra',
+    skills: ['Hostinger', 'DNS'],
+  },
+  {
+    name: 'Boas práticas',
+    skills: ['Clean Code', 'arquitetura de sistemas', 'componentização', 'responsividade', 'versionamento'],
   },
 ]
 
